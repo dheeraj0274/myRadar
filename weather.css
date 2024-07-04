@@ -127,4 +127,26 @@ body{
     font-weight: bold;
     margin: 20PX;
 }
+@media screen and (max-width:500px) {
+   .container{ display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin-top: 30px;
+
+    
+}
+.card{
+    width:250px;
+    display: flex;
+}
+.btn{
+    width: 70px;
+
+}
+.city{
+    width: 100px;
+}
+}
+
 
