@@ -147,6 +147,27 @@ body{
    .city{
           width: 100px;
 }
+    .top{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+}
+.outputcard{
+    visibility: hidden;
+    background: #043566;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
 }
 
 
