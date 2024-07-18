@@ -27,3 +27,17 @@ searchbtn.addEventListener('click', async ()=>{
     
 
 })
+
+// For enter key event
+cityInput.addEventListener('keydown', async (event) => {
+    if (event.key === 'Enter') {
+      const input = cityInput.value;
+      document.getElementById('tempDisplay').style.visibility = 'visible';
+      const result = await getData(APIKYE, input);
+      cityName.innerText = ` ${result.location.name}, ${result.location.region}`;
+      countryName.innerText = `${result.location.country}`;
+      temp.innerText = `${result.current.temp_c}`;
+      sup.innerText = '°C';
+      localTime.innerText = `${result.location.localtime}`;
+    }
+  });
